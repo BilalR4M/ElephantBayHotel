@@ -1,0 +1,82 @@
+/* Common styles for containers */
+.event-container {
+  max-width: 800px; /* Set a reasonable maximum width for responsiveness */
+  margin: 0 auto; /* Center the container horizontally */
+  padding: 2rem; /* Add some padding for visual separation */
+  font-family: sans-serif; /* Use a clean sans-serif font for readability */
+}
+
+/* Styles for the unordered list */
+.event-list {
+  list-style: none; /* Remove default bullet points */
+  padding: 0; /* Remove default padding */
+  margin: 0; /* Remove default margin */
+}
+
+/* Styles for individual events */
+.event-item {
+  border-bottom: 1px solid #ddd; /* Add a subtle border between events */
+  padding: 1rem 0; /* Add some space within each event */
+}
+
+.event-title {
+  margin: 0 0 0.5rem 0; /* Adjust margin for better separation */
+}
+
+.event-details {
+  margin-bottom: 0.5rem; /* Add a bit of space between event details */
+}
+
+.event-button {
+  background-color: #4CAF50; /* Green for positive actions (Edit) */
+  color: white;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-right: 1rem; /* Add some space between buttons */
+}
+
+.event-button:hover {
+  background-color: #3e8e41; /* Darker green on hover */
+}
+
+.delete-button { /* Style the delete button differently for clarity */
+  background-color: #f44336; /* Red for negative actions (Delete) */
+}
+
+.delete-button:hover {
+  background-color: #da291c; /* Darker red on hover */
+}
+
+/* Event-specific styles */
+.event-container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.events-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.event-card {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 20px;
+  width: calc(33.33% - 20px); /* Adjust width as needed */
+}
+
+/* Media query for responsiveness */
+@media screen and (max-width: 768px) {
+  .event-card {
+    width: calc(50% - 20px);
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .event-card {
+    width: 100%;
+  }
+}
